@@ -1,0 +1,78 @@
+#regions-bg {
+  padding: 2.812rem 0;
+
+  .regions-container {
+    @media screen and (max-width: 992px) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .select-control {
+      @media screen and (max-width: 992px) {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        border-bottom: 2px solid $black;
+        margin-bottom: 1.687rem;
+        padding: 1.25rem 0 1.25rem;
+        background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMTMiIHZpZXdCb3g9IjAgMCAyMCAxMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE4LjUwNTkgMkwxMC41NTE4IDEwTDEuOTg1ODMgMiIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIzIi8+Cjwvc3ZnPgo=) 100% no-repeat transparent;
+      }
+    }
+
+    .tag {
+      background-color: $grey8;
+      max-width: max-content;
+      padding: 10px 20px;
+
+      @media screen and (max-width: 992px) {
+        margin-bottom: 1.125rem;
+      }
+
+      span {
+        font-size: 1.125rem;
+        letter-spacing: 0.3px;
+        font-weight: 600;
+      }
+    }
+
+    .filter-regions {
+      margin-left: -0.484rem;
+      margin-right: -0.484rem;
+
+      @media screen and (max-width: 992px) {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      button {
+        padding: 0.625rem 1.25rem;
+        background-color: $white;
+        border-radius: 2.25rem;
+        color: $grey;
+        font-size: 0.875rem;
+        line-height: 111%;
+        margin-left: 0.484rem;
+        margin-right: 0.484rem;
+        border: 2px solid $grey;
+        font-weight: 400;
+
+        &:hover {
+          background-color: $darkest-green;
+          color: $white;
+          border-color: $darkest-green;
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      button.active {
+        background-color: $darkest-green !important;
+        color: $white !important;
+        border: 2px solid $darkest-green !important;
+      }
+    }
+  }
+}

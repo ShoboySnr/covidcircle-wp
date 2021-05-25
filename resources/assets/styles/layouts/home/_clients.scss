@@ -1,0 +1,52 @@
+#clients {
+  background-color: $white;
+  margin-top: 1.328rem;
+  margin-bottom: 3.013rem;
+
+  .title {
+    margin-bottom: 3.013rem;
+
+    @media screen and (max-width: 992px) {
+      margin-bottom: 2.225rem;
+    }
+
+    h2 {
+      color: $black2;
+      line-height: 110%;
+      font-size: 1.875rem;
+      font-weight: bold;
+    }
+  }
+
+  .content {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+    .client-container {
+      margin-left: -1.75rem;
+      margin-right: -1.75rem;
+      max-width: max-content;
+
+      @media screen and (max-width: 992px) {
+        margin-left: -0.825rem;
+        margin-right: -0.825em;
+        flex-wrap: wrap;
+
+        & > * {
+          margin-bottom: 2.225rem;
+        }
+      }
+
+      .client-padding {
+        margin-left: 1.75rem;
+        margin-right: 1.75rem;
+
+        @media screen and (max-width: 992px) {
+          margin-left: 0.825rem;
+          margin-right: 0.825em;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+#networks-maps {
+  background-color: $grey-lightest;
+  padding: 0 2.25rem;
+
+  @media screen and (max-width: 992px) {
+    padding: 0;
+  }
+
+  svg {
+    margin-left: -4.375rem;
+
+    @media screen and (max-width: 992px) {
+      margin-left: 0;
+      height: 250px !important;
+    }
+
+    .group-continent {
+      position: relative;
+
+      &:hover {
+        cursor: pointer;
+
+        path {
+          fill: $darkest-green;
+          stroke: $darkest-green;
+        }
+      }
+
+      &.active {
+        path {
+          fill: $darkest-green;
+          stroke: $darkest-green;
+        }
+      }
+    }
+  }
+
+  .country-details {
+    background-color: $grey-lightest;
+    padding: 0.937rem 0.837rem;
+    border: 1px solid $grey4;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 20px 25px -5px rgba(26, 32, 44, 0.1), 0 10px 10px -5px rgba(26, 32, 44, 0.04);
+    z-index: 2;
+    max-width: max-content;
+
+    p {
+      font-size: 1.125rem;
+      line-height: 111%;
+      color: $black2;
+    }
+  }
+}

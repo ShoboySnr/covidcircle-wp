@@ -1,0 +1,150 @@
+#four-elements {
+  background-color: $grey7;
+  padding: 6.437rem 0;
+  width: 100vw;
+
+  .title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5.812rem;
+
+    @media screen and (max-width: 992px) {
+      margin-bottom: 3.812rem;
+    }
+
+    h2 {
+      font-size: 2.25rem;
+      line-height: 111%;
+      font-weight: 600;
+      color: $black2;
+    }
+  }
+
+  .contents {
+    display: flex;
+    justify-content: center;
+
+    .items-container {
+      width: 100%;
+
+      @media screen and (max-width: 992px) {
+        max-width: 100%;
+      }
+
+      .featured-image-about {
+        width: 100%;
+
+        @media screen and (max-width: 992px) {
+          display: flex;
+          justify-content: center;
+        }
+
+        img {
+          max-width: 244px;
+
+          @media screen and (max-width: 992px) {
+            max-width: 100%;
+          }
+        }
+      }
+
+      .details {
+        margin-left: 6.25rem;
+        font-size: 1.125rem;
+        line-height: 169%;
+        color: $black2;
+        text-align: left;
+
+        @media screen and (max-width: 992px) {
+          margin-left: 0;
+          margin-top: 2.5rem;
+        }
+
+        img {
+          width: 100%;
+        }
+
+        .title-text {
+          font-size: 1.5rem;
+          line-height: 111%;
+          color: $black2;
+          font-weight: bold;
+          margin-bottom: 2.75rem;
+        }
+      }
+    }
+  }
+}
+
+#mapping-analysis {
+  width: 100%;
+  padding-top: 4.562rem;
+  padding-bottom: 2.187rem;
+
+  @media screen and (max-width: 992px) {
+    padding-top: 2.562rem;
+  }
+
+  .title {
+    margin-bottom: 2.437rem;
+
+    h2 {
+      font-size: 1.5rem;
+      line-height: 111%;
+      font-weight: bold;
+      color: $black2;
+    }
+  }
+
+  .items-container {
+    width: 100%;
+
+    @media screen and (max-width: 992px) {
+      max-width: 100%;
+    }
+
+    .details {
+      font-size: 1.125rem;
+      line-height: 169%;
+      color: $black2;
+      text-align: left;
+
+      @media screen and (max-width: 992px) {
+        margin-top: 2.5rem;
+      }
+    }
+
+    .featured-image-about {
+      width: 100%;
+
+      @media screen and (max-width: 992px) {
+        display: flex;
+        justify-content: center;
+      }
+
+      img {
+        max-width: 244px;
+
+        @media screen and (max-width: 992px) {
+          max-width: 100%;
+        }
+      }
+    }
+
+    .margin-left {
+      margin-left: 6.25rem;
+
+      @media screen and (max-width: 992px) {
+        margin-left: 0;
+      }
+    }
+
+    .margin-right {
+      margin-right: 6.25rem;
+
+      @media screen and (max-width: 992px) {
+        margin-right: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+#related-posts {
+  background-color: $grey7;
+  margin-top: 5.109rem;
+  width: 100vw;
+  padding-top: 3.125rem;
+  padding-bottom: 3.219rem;
+  margin-bottom: -3.75rem;
+
+  .title-container {
+    width: 100%;
+    text-align: center;
+
+    h3 {
+      font-size: 1.5rem;
+      color: $black3;
+      font-weight: 500;
+      line-height: 111%;
+    }
+  }
+
+  .related-container {
+    .without-hover {
+      background-color: $grey7;
+    }
+  }
+}

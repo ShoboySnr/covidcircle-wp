@@ -1,0 +1,157 @@
+#single-event {
+  width: 100vw;
+
+  .featured-image {
+    img {
+      width: 100%;
+      height: 565.5px;
+      object-fit: cover;
+      object-position: top;
+    }
+  }
+
+  .content {
+    margin-top: 5.046rem;
+
+    .items-container {
+      overflow-x: hidden;
+
+      .primary-link {
+        font-size: 1.5rem;
+        line-height: 1.375rem;
+        margin-bottom: 1.25rem;
+
+        .span {
+          color: $primary;
+          border-bottom-color: $primary;
+        }
+
+        &:hover {
+          span {
+            color: $purple;
+            border-bottom-color: $purple;
+          }
+
+          svg {
+            path {
+              stroke: $purple;
+              fill: $purple;
+            }
+          }
+        }
+      }
+
+      .details-container {
+        .category-content-container {
+          margin-bottom: 3.718rem;
+
+          @apply -mx-1;
+
+          .category-content {
+            background-color: $yellow;
+            padding: 7px 20px;
+            width: max-content;
+
+            p {
+              font-size: 0.875rem;
+              color: $black2;
+              font-weight: 500;
+              line-height: 111%;
+            }
+          }
+        }
+
+        .date-content {
+          p {
+            font-size: 0.875rem;
+            line-height: 111%;
+            color: $grey3;
+            font-weight: 400;
+          }
+
+          .tag {
+            background-color: $grey8;
+            min-width: max-content;
+
+            span {
+              font-size: 0.875rem;
+              letter-spacing: 0.3px;
+              font-weight: 600;
+              padding: 7px 10px;
+            }
+          }
+        }
+
+        .full-details {
+          color: $black2;
+          line-height: 1.875rem;
+          font-weight: 300;
+          font-size: 1.125rem;
+
+          .register-link {
+            margin-top: 1.687rem;
+          }
+
+          h1.title {
+            font-size: 1.5rem;
+            color: $black2;
+            line-height: 111%;
+            font-weight: 500;
+            min-width: 100%;
+            margin-bottom: 2.75rem;
+          }
+
+          h1,
+          h2,
+          h3,
+          h4,
+          h5,
+          h6 {
+            color: $black2;
+            line-height: 1.5;
+          }
+        }
+      }
+
+      .title-container {
+        max-width: 12.375rem;
+        width: 100%;
+        margin-right: 5.25rem;
+
+        @media screen and (max-width: 992px) {
+          margin-right: 0;
+          max-width: 100%;
+        }
+
+        ul {
+          list-style: none;
+
+          li {
+            margin-bottom: 2.562rem;
+
+            .title {
+              background-color: $grey8;
+              color: $black;
+              padding: 0.625rem 1.25rem;
+              font-size: 1.125rem;
+              font-weight: bold;
+              line-height: 111%;
+              width: 100%;
+              max-width: max-content;
+              margin-bottom: 1.5rem;
+            }
+
+            .details {
+              p {
+                font-size: 1.125rem;
+                line-height: 1.812rem;
+                color: $black2;
+                font-weight: 400;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

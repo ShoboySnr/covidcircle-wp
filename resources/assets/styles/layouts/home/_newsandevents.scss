@@ -1,0 +1,292 @@
+#news-and-events {
+  background-color: $grey-lightest;
+  padding-top: 6.25rem;
+  padding-bottom: 2.062rem;
+
+  @media screen and (max-width: 992px) {
+    padding-top: 3.125rem;
+  }
+
+  .news-and-events-container {
+    .title {
+      h2 {
+        font-weight: 700;
+        font-size: 2.25rem;
+        line-height: 2.497rem;
+        color: $black2;
+
+        @media screen and (max-width: 992px) {
+          font-size: 2rem;
+        }
+
+        @media screen and (max-width: 500px) {
+          font-size: 1.375rem;
+        }
+      }
+    }
+
+    .news-content {
+      margin-top: 3.125rem;
+      margin-left: -1.156rem;
+      margin-right: -1.156rem;
+
+      @media screen and (max-width: 992px) {
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      .owl-carousel {
+        .owl-stage-outer {
+          width: 150%;
+        }
+      }
+
+      .owl-nav {
+        position: absolute;
+        top: -5.17rem;
+        right: 0;
+        margin-left: -10px;
+        margin-right: -10px;
+        padding-right: 1.156rem;
+
+        @media screen and (max-width: 940px) {
+          right: 0.937rem;
+          padding-right: 0;
+        }
+
+        button {
+          margin-left: 10px;
+          margin-right: 10px;
+
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+
+      .owl-item {
+        width: max-content !important;
+      }
+
+      .hover-bg {
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 100%;
+        margin-bottom: 0;
+        width: 20.562rem;
+
+        .content-bg {
+          margin-left: 0;
+          background-color: $grey-lightest;
+          min-height: 30.248rem;
+        }
+
+        @media screen and (max-width: 992px) {
+          width: 100%;
+          margin-bottom: 3.218rem;
+        }
+      }
+
+      .content-bg {
+        border-left: 2px solid $grey2;
+        margin-left: 1.156rem;
+        min-height: 30.248rem;
+
+        @media screen and (max-width: 992px) {
+          flex-direction: column-reverse;
+          padding-top: 0 !important;
+          margin-left: 0 !important;
+          margin-right: 0 !important;
+        }
+
+        .content {
+          .tag {
+            span {
+              font-size: 0.875rem;
+              letter-spacing: 0.3px;
+              font-weight: 600;
+            }
+          }
+
+          .events {
+            background-color: $yellow;
+            max-width: max-content;
+            padding: 1px 8px;
+          }
+
+          .date {
+            .span {
+              font-size: 0.875rem;
+              line-height: 111%;
+              font-weight: 600;
+              letter-spacing: 0.3px;
+              color: $black2;
+            }
+          }
+
+          .title {
+            margin-top: 1.875rem;
+            max-width: 16.812rem;
+            width: 100%;
+            min-height: 5.25rem;
+
+            h3 {
+              font-weight: 700;
+              font-size: 1.5rem;
+              line-height: 1.75rem;
+              color: $black2;
+
+              &:hover {
+                color: $white !important;
+              }
+            }
+          }
+
+          .description {
+            margin-top: 1.5rem;
+            max-width: 17.312rem;
+            min-height: 5.25rem;
+
+            p {
+              font-size: 1.125rem;
+              font-weight: 300;
+              line-height: 1.75rem;
+              color: $black2;
+            }
+          }
+
+          .link {
+            margin-top: 1.032rem;
+            bottom: 0;
+            margin-bottom: 2.5rem;
+
+            .primary-link {
+              &:hover {
+                color: $primary;
+
+                span {
+                  border-color: $primary;
+                }
+
+                svg {
+                  path {
+                    fill: $primary;
+                    stroke: $primary;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .featured-image {
+          margin-left: 4.375rem;
+          margin-top: -2.5rem;
+
+          @media screen and (max-width: 992px) {
+            margin-left: 0;
+            margin-top: 0;
+          }
+
+          img {
+            object-fit: cover;
+            min-height: 30.248rem;
+            width: 27.312rem;
+
+            @media screen and (max-width: 992px) {
+              min-height: 23.187rem;
+              height: 23.187rem;
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      .first-width {
+        width: 100%;
+        max-width: 50.687rem;
+        padding-top: 2.5rem;
+        margin-right: 1.156rem;
+
+        @media screen and (max-width: 992px) {
+          margin-bottom: 3.218rem;
+        }
+
+        .content {
+          padding-left: 1.625rem;
+
+          @media screen and (max-width: 992px) {
+            padding-top: 1.8rem;
+          }
+
+          .date {
+            margin-top: 1.25rem;
+
+            p {
+              font-size: 0.875rem;
+              line-height: 111%;
+              font-weight: 600;
+              letter-spacing: 0.3px;
+              color: $black2;
+            }
+          }
+
+          .title {
+            h3 {
+              &:hover {
+                color: $primary !important;
+              }
+            }
+          }
+
+          .description {
+            margin-bottom: 3.906rem;
+          }
+
+          .link {
+            position: relative;
+          }
+        }
+      }
+
+      .default-width {
+        width: 100%;
+        max-width: 20.562rem;
+
+        @media screen and (max-width: 992px) {
+          max-width: 100%;
+        }
+
+        .cotent {
+          @media screen and (max-width: 992px) {
+            padding-top: 1.8rem;
+          }
+        }
+      }
+
+      .see-all {
+        margin-top: 4.438rem;
+        margin-right: 1.156rem;
+
+        @media screen and (max-width: 992px) {
+          margin-right: 1rem;
+          margin-top: 1.438rem;
+        }
+
+        a {
+          font-size: 1.125rem;
+          line-height: 111%;
+          color: $black2;
+          text-decoration-line: underline;
+          order: 2;
+          flex-grow: 0;
+          margin: 0 0;
+
+          &:hover {
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+}

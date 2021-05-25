@@ -1,0 +1,65 @@
+#pagination {
+  width: 100%;
+  margin-bottom: 4.125rem;
+
+  @media screen and (max-width: 992px) {
+    margin-bottom: 2.0625rem;
+  }
+
+  .pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .page-numbers {
+      border-radius: 4px;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      color: $darkest-grey;
+      padding: 0.625rem 1rem;
+      margin-right: 7.5px;
+      margin-left: 7.5px;
+      margin-bottom: 0.6rem;
+
+      @media screen and (max-width: 992px) {
+        padding: 0.325rem 1.3rem;
+        margin-right: 1.5px;
+        margin-left: 1.5px;
+      }
+    }
+
+    a {
+      &:hover {
+        background-color: $darkest-green;
+        color: $white;
+      }
+    }
+
+    .current {
+      background-color: $grey8;
+      color: $darkest-green;
+    }
+
+    .dots {
+      display: none;
+      padding: 0.5rem 0.5rem !important;
+    }
+
+    .next,
+    .prev {
+      background-color: $darkest-green;
+      color: $white;
+      padding: 0.625rem 1rem !important;
+      display: block !important;
+
+      @media screen and (max-width: 992px) {
+        padding: 0.325rem 0.5rem !important;
+      }
+
+      &:hover {
+        background-color: transparent;
+        color: $darkest-green;
+      }
+    }
+  }
+}

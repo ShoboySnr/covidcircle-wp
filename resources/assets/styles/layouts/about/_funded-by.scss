@@ -1,0 +1,45 @@
+#funded-by {
+  padding: 3.25rem 0;
+
+  .title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 4rem;
+
+    h2 {
+      font-weight: bold;
+      color: $black2;
+      font-size: 2.25rem;
+    }
+  }
+
+  .content {
+    .items-card {
+      margin-left: -1.187rem;
+      margin-right: -1.187rem;
+
+      .card {
+        padding: 3.437rem 2.812rem;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin-right: 1.187rem;
+        margin-left: 1.187rem;
+        margin-bottom: 2.625rem;
+        max-width: 23.6267rem;
+
+        img {
+          width: max-content;
+        }
+
+        .details {
+          margin-top: 1.125rem;
+          font-size: 1rem;
+          line-height: 137%;
+          color: $black2;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}

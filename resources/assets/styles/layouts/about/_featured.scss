@@ -1,0 +1,54 @@
+#about-featured {
+  background-color: $white;
+  width: 100vw;
+  padding-top: 6.098rem;
+  padding-bottom: 5.963rem;
+
+  .about-container {
+    .featured-image {
+      padding: 0;
+    }
+
+    .content {
+      margin-left: 2.625rem;
+      margin-bottom: 2.5rem;
+
+      @media screen and (max-width: 992px) {
+        margin-left: 0;
+        margin-top: 2.875rem;
+      }
+
+      .title {
+        margin-bottom: 2.187rem;
+
+        p {
+          background-color: $light-green;
+          font-size: 1rem;
+          line-height: 111%;
+          letter-spacing: 0.3px;
+          font-weight: 500;
+          color: #fff;
+          padding: 0.5rem;
+          width: max-content;
+          max-width: 100%;
+        }
+
+        h2 {
+          margin-top: 2.187rem;
+          font-size: 1.5rem;
+          font-weight: bold;
+          line-height: 1.875rem;
+          color: $black2;
+          max-width: 24.375rem;
+        }
+      }
+
+      .content-details {
+        font-size: 1.125rem;
+        line-height: 1.875rem;
+        font-weight: 300;
+        color: $black2;
+      }
+    }
+  }
+}

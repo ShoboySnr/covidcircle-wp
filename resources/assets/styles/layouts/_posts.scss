@@ -1,0 +1,225 @@
+#post-filter {
+  .title {
+    @apply flex justify-start flex-row items-center;
+
+    @media screen and (max-width: 992px) {
+      flex-wrap: wrap;
+      flex-direction: column;
+      width: 100%;
+      text-align: left;
+      align-items: flex-start;
+    }
+
+    p {
+      font-size: 1.125rem;
+      color: $black;
+      font-weight: 700;
+      line-height: 111%;
+      margin-right: 2.093rem;
+    }
+  }
+
+  .filter-news-events {
+    margin-left: -0.484rem;
+    margin-right: -0.484rem;
+
+    @media screen and (max-width: 992px) {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    select {
+      @media screen and (max-width: 992px) {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        border-bottom: 2px solid $black;
+        margin-bottom: 1.687rem;
+        padding: 1.25rem 0 1.25rem;
+        background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMTMiIHZpZXdCb3g9IjAgMCAyMCAxMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE4LjUwNTkgMkwxMC41NTE4IDEwTDEuOTg1ODMgMiIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIzIi8+Cjwvc3ZnPgo=) 100% no-repeat transparent;
+      }
+    }
+
+    button {
+      padding: 0.625rem 1.25rem;
+      background-color: $white;
+      border-radius: 2.25rem;
+      color: $grey;
+      font-size: 0.875rem;
+      line-height: 111%;
+      margin-left: 0.484rem;
+      margin-right: 0.484rem;
+      border: 2px solid $grey;
+      font-weight: 400;
+
+      &:hover {
+        background-color: $darkest-green;
+        color: $white;
+        border-color: $darkest-green;
+      }
+    }
+
+    button.active {
+      background-color: $darkest-green !important;
+      color: $white;
+      border: 2px solid $darkest-green !important;
+    }
+  }
+
+  .all-categories {
+    margin-left: -0.4215rem;
+    margin-right: -0.4215rem;
+
+    @media screen and (max-width: 992px) {
+      margin-left: 0;
+      margin-right: 0;
+      width: 100%;
+      flex-direction: column;
+    }
+
+    select {
+      margin-left: 0.4215rem;
+      margin-right: 0.4215rem;
+
+      @media screen and (max-width: 992px) {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        border-bottom: 2px solid $black;
+        margin-bottom: 1.687rem;
+        padding: 1.25rem 0 1.25rem;
+        background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMTMiIHZpZXdCb3g9IjAgMCAyMCAxMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE4LjUwNTkgMkwxMC41NTE4IDEwTDEuOTg1ODMgMiIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIzIi8+Cjwvc3ZnPgo=) 100% no-repeat transparent;
+      }
+    }
+  }
+}
+
+.blog {
+  #page-header {
+    display: none;
+  }
+}
+
+#news-events {
+  background-color: $white;
+  padding-top: 3.125rem;
+
+  .news-events-fullcard {
+    @apply flex w-full items-start justify-start;
+
+    border-left: 2px solid $grey2;
+    padding-left: 1rem;
+
+    @media screen and (max-width: 992px) {
+      flex-direction: column-reverse;
+    }
+
+    .content {
+      width: 100%;
+      max-width: 32.125rem;
+
+      @media screen and (max-width: 992px) {
+        max-width: 100%;
+      }
+
+      .tag {
+        margin-top: 1.5rem;
+        background-color: $grey8;
+        max-width: max-content;
+
+        span {
+          font-size: 0.875rem;
+          line-height: 111%;
+          letter-spacing: 0.3px;
+          font-weight: 600;
+          padding: 7px 10px;
+        }
+      }
+
+      .events {
+        background-color: $yellow;
+        max-width: max-content;
+        padding: 7px;
+      }
+
+      .date {
+        margin-top: 1.25rem;
+
+        .span {
+          font-size: 0.687rem;
+          line-height: 1.906rem;
+          font-weight: 600;
+          letter-spacing: 0.3px;
+          color: $grey3;
+        }
+      }
+
+      .title {
+        margin-top: 1.875rem;
+        width: 100%;
+        max-width: 31.5rem;
+
+        h3 {
+          font-weight: 700;
+          font-size: 1.5rem;
+          line-height: 1.75rem;
+          color: $black2;
+
+          &:hover {
+            color: $primary;
+          }
+        }
+      }
+
+      .description {
+        margin-top: 1.5rem;
+        max-width: 20.25rem;
+
+        @media screen and (max-width: 992px) {
+          max-width: 100%;
+        }
+
+        p {
+          font-size: 1.125rem;
+          font-weight: 300;
+          line-height: 1.75rem;
+        }
+      }
+
+      .link {
+        margin-top: 3.032rem;
+
+        .primary-link {
+          &:hover {
+            color: $primary;
+
+            span {
+              border-color: $primary;
+            }
+
+            svg {
+              path {
+                fill: $primary;
+                stroke: $primary;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .featured-image {
+      margin-left: 4.375rem;
+      width: 100%;
+
+      @media screen and (max-width: 992px) {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .filter-bg {
+    margin-top: 4.326rem;
+  }
+}

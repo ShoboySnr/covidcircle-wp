@@ -1,0 +1,220 @@
+#footer {
+  background-color: $grey7;
+  overflow-x: hidden;
+
+  a {
+    color: $black2;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+
+  .contact_menu {
+    max-width: 23%;
+    width: 100%;
+
+    @media screen and (max-width: 992px) {
+      max-width: 100%;
+    }
+
+    nav {
+      ul {
+        list-style: none;
+
+        li {
+          margin-bottom: 1.875rem;
+
+          a {
+            font-size: 1.125rem;
+            line-height: 111%;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-group {
+    margin-top: 3.156rem;
+
+    .contact_info {
+      margin-bottom: 4.437rem;
+      width: 100%;
+      max-width: 54%;
+
+      @media screen and (max-width: 992px) {
+        max-width: 100%;
+        margin-bottom: 2.2185rem;
+      }
+
+      .footer-logo {
+        display: inline-flex;
+        margin-right: 3.312rem;
+
+        @media screen and (max-width: 992px) {
+          margin-bottom: 0.937rem;
+
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      .details {
+        font-size: 0.875rem;
+        font-weight: 400;
+        margin-top: 2.687rem;
+
+        h3 {
+          font-weight: 700;
+          font-size: 0.875rem;
+          line-height: 1.125rem;
+        }
+
+        .address {
+          line-height: 1.687rem;
+
+          p {
+            line-height: 1.687rem;
+          }
+        }
+
+        .email {
+          margin-top: 1.562rem;
+
+          a {
+            text-decoration: underline;
+            font-weight: bold;
+            line-height: 1.687rem;
+          }
+        }
+
+        .phone_number {
+          margin-top: 0.27rem;
+
+          a {
+            line-height: 1.687rem;
+          }
+        }
+      }
+    }
+  }
+
+  .copyrights {
+    padding-bottom: 1.25rem;
+
+    .content {
+      color: $black2;
+      font-size: 0.875rem;
+      line-height: 111%;
+
+      .footer-link {
+        font-weight: bold;
+        color: $black;
+      }
+    }
+  }
+
+  .contact-form {
+    padding-top: 5.531rem;
+    padding-bottom: 3.156rem;
+    display: flex;
+
+    @media screen and (max-width: 992px) {
+      padding-top: 2.7805rem;
+      padding-bottom: 1.578rem;
+    }
+
+    h2 {
+      text-align: left;
+      font-size: 2.25rem;
+      line-height: 111%;
+      font-weight: bold;
+      color: $black2;
+      font-style: normal;
+      margin-bottom: 2.281rem;
+
+      @media screen and (max-width: 992px) {
+        font-size: 1.875rem;
+      }
+    }
+
+    .mc4wp-response {
+      margin-top: 1.125rem;
+      width: 100%;
+      text-align: center;
+    }
+
+    .form-group {
+      @apply w-full;
+
+      display: grid;
+      grid-gap: 19px;
+      grid-template-columns: repeat(auto-fill, minmax(297px, 1fr));
+
+      @media screen and (max-width: 992px) {
+        grid-template-columns: repeat(auto-fill, minmax(297px, 100%));
+      }
+
+      .input-group {
+        width: 100%;
+
+        @media screen and (max-width: 992px) {
+          width: 100%;
+          margin-bottom: 0.593rem;
+        }
+
+        @media screen and (max-width: 700px) {
+          width: 100%;
+        }
+
+        input {
+          border-bottom: 4px solid $black2;
+          padding: 1.437rem 0;
+          text-align: center;
+          color: $black;
+          background-color: transparent;
+          width: 100%;
+          font-size: 1.375rem;
+          font-weight: 600;
+          line-height: 111%;
+
+          @media screen and (max-width: 992px) {
+            padding: 1.037rem 0;
+          }
+
+          &::placeholder {
+            color: $black;
+          }
+
+          &:focus {
+            outline: none;
+
+            &::placeholder {
+              visibility: hidden;
+            }
+          }
+        }
+
+        button {
+          @apply flex justify-center items-end;
+
+          text-align: center;
+          width: 100%;
+          background-color: $primary;
+          color: $white;
+          padding: 1.375rem 0;
+          font-size: 1.375rem;
+          font-weight: 600;
+          line-height: 111%;
+          border: 2px solid $primary;
+
+          @media screen and (max-width: 992px) {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

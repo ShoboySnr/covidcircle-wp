@@ -1,0 +1,113 @@
+@import "maps";
+@import "regions";
+
+#regions-content {
+  .regions-container {
+    margin-left: -1.187rem;
+    margin-right: -1.187rem;
+
+    @media screen and (max-width: 992px) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .items-container {
+      display: flex;
+      background-color: $grey-lightest;
+      padding: 1.562rem 2.187rem;
+      max-width: 36.562rem;
+      width: 100%;
+      margin-left: 1.187rem;
+      margin-right: 1.187rem;
+      margin-bottom: 2.375rem;
+
+      @media screen and (max-width: 992px) {
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 100%;
+      }
+
+      .item-bg {
+        @media screen and (max-width: 992px) {
+          .flex {
+            flex-direction: column;
+            align-items: flex-start !important;
+          }
+        }
+
+        img {
+          width: 8.125rem;
+          height: 6.125rem;
+          margin-right: 2.937rem;
+        }
+
+        .title-description {
+          .organisation {
+            background-color: $light-green;
+            font-size: 0.875rem;
+            line-height: 111%;
+            letter-spacing: 0.3px;
+            font-weight: 600;
+            color: $white;
+            padding: 0.5rem;
+            margin-bottom: 1.375rem;
+            max-width: max-content;
+          }
+
+          .themic_area {
+            padding: 5px 10px;
+            background-color: $white;
+            font-size: 0.812rem;
+            line-height: 111%;
+            color: $black2;
+            align-items: center;
+            margin-bottom: 1.375rem;
+            margin-top: -0.4rem;
+            width: 100%;
+            max-width: max-content;
+            text-align: left;
+          }
+
+          .title-link {
+            color: $black2;
+            font-size: 1.25rem;
+            line-height: 139%;
+            font-weight: 500;
+          }
+
+          p {
+            margin-top: 11px;
+            font-size: 1rem;
+            line-height: 137%;
+            color: $black2;
+            font-weight: normal;
+            margin-bottom: 1.375rem;
+          }
+
+          a {
+            span {
+              font-size: 1.125rem;
+              letter-spacing: 0.3px;
+              line-height: 1.375rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.show-map-content {
+  display: none;
+}
+
+.template-networks {
+  #page-header {
+    background-color: $white;
+    min-height: 19.5rem;
+
+    .title-container {
+      padding-top: 85px;
+    }
+  }
+}

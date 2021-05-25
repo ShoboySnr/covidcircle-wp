@@ -1,0 +1,13 @@
+// Global styles are set in the Tailwind config using a plugin
+body {
+  background: transparent;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+.input-control {
+  background-color: $grey8;
+  padding: 1.25rem 0.625rem;
+  font-size: 1.125rem;
+  line-height: 111%;
+  font-weight: 400;
+}
